@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thatix-Reastaurant</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- mdn font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <img src="./assets/logo.png" alt="" />
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero">
+      <h1>Search Your Favorite Recipie</h1>
+      <p>
+        A handful of simple ingredients typify the fresh, vibrant flavors of
+        Greek cooking
+      </p>
+    </section>
+
+    <!-- main -->
+    <main>
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Search..."
+          class="searchInput"
+          id="search-input"
+        />
+        <button class="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <h1 class="title">Latest Recipies</h1>
+
+      <!-- Content inserted through js -->
+      <div class="meals"></div>
+
+      <!-- overlay Content -->
+      <div class="overlay">
+        <div class="overlay-card">
+          <div class="overlay-hero">
+            <img src="" alt="" class="overlay-hero-img" />
+          </div>
+          <h2 class="card-name"></h2>
+          <hr />
+          <p class="instructions"></p>
+          <hr />
+          <p class="category"></p>
+          <button class="close-btn">Close</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright @ 2023 - All right reserved</p>
+      <div class="footer-links">
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
